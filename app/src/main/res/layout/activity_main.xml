@@ -41,17 +41,78 @@
             android:hint="opis lub recenzja"
             />
 
-        
+        <SeekBar
+            android:id="@+id/item_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            />
 
+        <TextView
+            android:id="@+id/seekbar_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            />
 
+        <RadioGroup
+            android:id="@+id/item_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
 
+            <RadioButton
+                android:id="@+id/book"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ksiazka"
+                />
 
+            <RadioButton
+                android:id="@+id/moovie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="film"
+                />
+        </RadioGroup>
 
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Dodaj do listy"
+            />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+        <Button
+            android:id="@+id/save_to_gson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zapisz do gson"
+            />
 
-
-
+            <Button
+                android:id="@+id/download_from_gson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:text="pobierz z gson"
+                />
+        </LinearLayout>
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </LinearLayout>
