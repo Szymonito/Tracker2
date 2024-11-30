@@ -20,6 +20,27 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/itemname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="wprowadz tytuł"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemcategory"
+            android:hint="wprowadz gatunek"
+            />
+
+        <EditText
+            android:id="@+id/item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="opis lub recenzja"
+            />
+
         
 
 
@@ -29,10 +50,8 @@
 
 
 
+
+
     </LinearLayout>
-
-
-
-
 
 </LinearLayout>
